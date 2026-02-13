@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Pipotam 💖</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Roboto:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: #000;
+        font-family: 'Roboto', sans-serif;
+      }
+      .pixel-font {
+        font-family: 'Press Start 2P', cursive;
+      }
+      .playfair {
+        font-family: 'Playfair Display', serif;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+      }
+      @keyframes heart-burst {
+        0% { transform: scale(0) rotate(0deg); opacity: 1; }
+        100% { transform: scale(5) translateY(-300px) rotate(720deg); opacity: 0; }
+      }
+      @keyframes blur-reveal {
+        0% { filter: blur(10px); opacity: 0; transform: translateY(10px); }
+        100% { filter: blur(0px); opacity: 1; transform: translateY(0); }
+      }
+      .blur-text {
+        animation: blur-reveal 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      }
+      .heart-particle {
+        position: fixed;
+        bottom: -20px;
+        pointer-events: none;
+        z-index: 1;
+        animation: float var(--duration) linear forwards;
+      }
+      .burst-heart {
+        position: absolute;
+        pointer-events: none;
+        z-index: 100;
+        animation: heart-burst 2s ease-out forwards;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      }
+      .pixel-heart-shape {
+        clip-path: polygon(50% 0%, 61% 14%, 75% 14%, 88% 25%, 88% 40%, 50% 80%, 12% 40%, 12% 25%, 25% 14%, 39% 14%);
+      }
+      .pixel-button {
+        position: relative;
+        display: inline-block;
+        padding: 14px 28px;
+        background: #ff2d55;
+        color: white;
+        text-decoration: none;
+        box-shadow: inset -4px -4px 0px 0px #8b0000;
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .pixel-button:hover {
+        transform: scale(1.05);
+      }
+      .pixel-button:active {
+        box-shadow: inset 4px 4px 0px 0px #8b0000;
+        transform: translate(2px, 2px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
