@@ -23,7 +23,7 @@ const App: React.FC = () => {
       {/* Scenic Background Container - Using the pond scenery */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="/input_file_0.svg" 
+          src="/WhatsApp Image 2026-02-10 at 5.44.33 PM.jpeg" 
           alt="Scenic background" 
           className="w-full h-full object-cover brightness-75 scale-105 transition-transform duration-1000"
         />
