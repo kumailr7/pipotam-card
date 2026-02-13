@@ -23,7 +23,7 @@ const App: React.FC = () => {
       {/* Scenic Background Container */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="input_file_0.png" 
+          src="WhatsApp Image 2026-02-10 at 12.20.26 PM.jpeg" 
           alt="Scenic background" 
           className="w-full h-full object-cover brightness-75 scale-105 transition-transform duration-1000"
         />
