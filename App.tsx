@@ -23,7 +23,7 @@ const App: React.FC = () => {
       {/* Scenic Background Container - Using the pond scenery */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="input_file_1.png" 
+          src="/input_file_0.svg" 
           alt="Scenic background" 
           className="w-full h-full object-cover brightness-75 scale-105 transition-transform duration-1000"
         />

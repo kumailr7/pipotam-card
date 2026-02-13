@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { X, Heart, Maximize2 } from 'lucide-react';
 
 const IMAGES = [
-  { url: 'input_file_3.png', title: 'Pipotam Portrait', desc: 'My favorite face in the whole world.' },
-  { url: 'input_file_2.png', title: 'By the Pond', desc: 'Thinking about you in every beautiful place.' },
-  { url: 'input_file_1.png', title: 'Pure Joy', desc: 'That laugh is what keeps me going.' },
-  { url: 'input_file_0.png', title: 'Golden Bloom', desc: 'You are more beautiful than any flower.' },
+  { url: '/input_file_3.svg', title: 'Pipotam Portrait', desc: 'My favorite face in the whole world.' },
+  { url: '/input_file_2.svg', title: 'By the Pond', desc: 'Thinking about you in every beautiful place.' },
+  { url: '/input_file_1.svg', title: 'Pure Joy', desc: 'That laugh is what keeps me going.' },
+  { url: '/input_file_0.svg', title: 'Golden Bloom', desc: 'You are more beautiful than any flower.' },
 ];
 
 const HeartGallery: React.FC = () => {
