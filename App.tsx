@@ -20,14 +20,14 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex flex-col selection:bg-pink-300 selection:text-pink-900">
-      {/* Scenic Background Container */}
+      {/* Scenic Background Container - Using the pond scenery */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="WhatsApp Image 2026-02-10 at 12.20.26 PM.jpeg" 
+          src="input_file_1.png" 
           alt="Scenic background" 
           className="w-full h-full object-cover brightness-75 scale-105 transition-transform duration-1000"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80" />
       </div>
 
       <PixelBackground />
@@ -72,7 +72,7 @@ const App: React.FC = () => {
                 OPEN HEART.EXE 💾
               </button>
             </div>
-            <p className="text-sm pixel-font opacity-80 text-white tracking-[0.2em]">VERSION 2.0.PIPOTAM-LOVE</p>
+            <p className="text-sm pixel-font opacity-80 text-white tracking-[0.2em]">VALENTINE EDITION v2.1</p>
           </div>
         )}
 
@@ -88,7 +88,7 @@ const App: React.FC = () => {
            <div className="text-center animate-fade-in flex flex-col items-center max-w-4xl py-10">
              <PixelCouple heart />
              <div className="glass-card p-12 rounded-[2rem] mt-8 shadow-[0_30px_60px_rgba(0,0,0,0.6)] border-white/40">
-               <h1 className="pixel-font text-3xl md:text-4xl text-white mb-8 drop-shadow-[4px_4px_0px_#ff2d55] blur-text uppercase tracking-tight">MAHAL KITA PANLANGA ❤️</h1>
+               <h1 className="pixel-font text-3xl md:text-5xl text-white mb-8 drop-shadow-[4px_4px_0px_#ff2d55] blur-text uppercase tracking-tight">MAHAL KITA PANLANGA ❤️</h1>
                <div className="space-y-8 text-white">
                  <p className="text-2xl md:text-4xl leading-[1.4] playfair font-bold drop-shadow-lg">
                    "i love you my life and thank you so being in my life and making me always happy"

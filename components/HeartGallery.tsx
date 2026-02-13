@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { X, Heart, Maximize2 } from 'lucide-react';
 
 const IMAGES = [
-  { url: 'WhatsApp Image 2026-01-31 at 1.47.09 PM.jpeg', title: 'Pipotam Smiling', desc: 'The smile that lights up my world.' },
-  { url: 'WhatsApp Image 2026-01-31 at 6.29.15 PM.jpeg', title: 'Selfie Queen', desc: 'Thinking about you every single day.' },
-  { url: 'WhatsApp Image 2026-01-31 at 6.29.17 PM.jpeg', title: 'Golden Bloom', desc: 'Just like these flowers, you are naturally beautiful.' },
-  { url: 'WhatsApp Image 2026-02-10 at 12.20.26 PM.jpeg', title: 'Scenic View', desc: 'A beautiful place for a beautiful person.' },
+  { url: 'input_file_3.png', title: 'Pipotam Portrait', desc: 'My favorite face in the whole world.' },
+  { url: 'input_file_2.png', title: 'By the Pond', desc: 'Thinking about you in every beautiful place.' },
+  { url: 'input_file_1.png', title: 'Pure Joy', desc: 'That laugh is what keeps me going.' },
+  { url: 'input_file_0.png', title: 'Golden Bloom', desc: 'You are more beautiful than any flower.' },
 ];
 
 const HeartGallery: React.FC = () => {
@@ -18,7 +18,7 @@ const HeartGallery: React.FC = () => {
         <h2 className="pixel-font text-3xl text-white mb-2 drop-shadow-lg blur-text">
           PICTURE PERFECT
         </h2>
-        <p className="text-pink-100 italic playfair text-xl">Capturing every bit of you.</p>
+        <p className="text-pink-100 italic playfair text-xl">My world in photos.</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -26,16 +26,16 @@ const HeartGallery: React.FC = () => {
           <div 
             key={idx}
             onClick={() => setSelectedImage(img)}
-            className="group relative cursor-pointer overflow-hidden rounded-2xl glass-card transition-all transform hover:-translate-y-2 hover:shadow-2xl border-white/10"
+            className="group relative cursor-pointer overflow-hidden rounded-3xl glass-card transition-all transform hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(255,105,180,0.3)] border-white/20"
           >
-            <div className="aspect-[4/5] overflow-hidden bg-black/20">
+            <div className="aspect-[4/5] overflow-hidden bg-black/40">
               <img 
                 src={img.url} 
                 alt={img.title} 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 brightness-90 group-hover:brightness-105"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
               <h4 className="pixel-font text-sm text-pink-400 mb-2">{img.title}</h4>
               <p className="text-white/90 text-lg font-light italic leading-snug">{img.desc}</p>
               <Maximize2 className="absolute top-6 right-6 text-white/50 w-6 h-6 group-hover:text-white transition-colors" />
@@ -61,13 +61,13 @@ const HeartGallery: React.FC = () => {
             className="max-w-4xl w-full flex flex-col items-center gap-8"
             onClick={e => e.stopPropagation()}
           >
-            <div className="relative glass-card p-2 rounded-3xl overflow-hidden shadow-2xl border-white/30 animate-scale-up">
+            <div className="relative glass-card p-2 rounded-3xl overflow-hidden shadow-2xl border-white/30">
               <img 
                 src={selectedImage.url} 
                 alt={selectedImage.title} 
                 className="max-h-[80vh] w-auto object-contain rounded-2xl"
               />
-              <div className="absolute top-4 right-4 bg-red-500 rounded-full p-2 shadow-lg">
+              <div className="absolute top-4 right-4 bg-pink-600 rounded-full p-2 shadow-lg">
                 <Heart className="w-6 h-6 text-white fill-current animate-pulse" />
               </div>
             </div>
